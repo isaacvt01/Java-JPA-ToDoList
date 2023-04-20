@@ -16,6 +16,10 @@ public class ToDoController {
     public String index() {
         return "Greetings from Spring Boot!";
     }
+    @GetMapping("/task/{id}")
+    public Task getTask(@PathVariable("id") long id) {
+        return toDoRepository.findById(id).orElse(new Task());
+    }
     @GetMapping("/tasks")
     public List<Task> getTasks() {
         return toDoRepository.findAll();
