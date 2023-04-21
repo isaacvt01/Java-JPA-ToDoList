@@ -73,3 +73,7 @@ Once the application is running, you can access the API endpoints using a tool l
 ## View
 
 I have also created a controller for the views, to display the list on a web site, in a table. It allows you to delete, edit and create.
+
+![Show all tasks](docs/allTasks.PNG)
+![Add Task view](docs/addTask.PNG)
+
